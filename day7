@@ -1,0 +1,4 @@
+include iostream
+  int a = 10
+  int b = 32
+  c = 4 + 3
