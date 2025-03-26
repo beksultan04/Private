@@ -1,0 +1,4 @@
+int a = 3
+  int b = 7
+  int c = 4+ 4
+  cout << c << endl;
