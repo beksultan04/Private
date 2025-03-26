@@ -1,0 +1,9 @@
+day 9
+#include <iostream>
+using namespace std;
+class main(){
+int a = 3;
+int b = 5
+int c = 4+3
+cout << c << endl;
+}
