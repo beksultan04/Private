@@ -1,0 +1,6 @@
+#include <iostream>
+  using namespace std;
+int a = 4;
+int b = 3;
+c = 2 + 3;
+cout << c << endl;
