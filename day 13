@@ -1,0 +1,7 @@
+#include <iostream>
+using namespace std;
+class main(){
+  int a = 3;
+  int b = 5;
+  cout << a + b << endl;
+}
