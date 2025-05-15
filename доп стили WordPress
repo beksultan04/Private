@@ -1,0 +1,282 @@
+html, body {
+  overflow-x: hidden;
+}
+/* --- ОБЩИЕ СТИЛИ ДЛЯ СЕКЦИИ С КОНТАКТАМИ И ФОРМОЙ --- */
+
+.contact-section-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.contact-left-column {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-right-column {
+    flex: 1;
+    min-width: 300px;
+}
+/* --- СТИЛИ ДЛЯ ЛЕВОЙ КОЛОНКИ (КОНТАКТЫ) --- */
+.contact-left-column .elementor-widget-heading .elementor-heading-title,
+.contact-left-column .contacts-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #222222;
+    margin-bottom: 25px;
+}
+
+.contact-left-column .contact-info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #333333;
+}
+
+.contact-left-column .contact-info-item .contact-icon {
+    margin-right: 12px;
+    font-size: 20px;
+    color: #00026D;
+    width: 24px;
+    text-align: center;
+}
+
+.contact-left-column .contact-info-item .icon-address-custom::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #00026D;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.contact-left-column .contact-info-item .icon-email-custom::before {
+    content: '✉';
+    font-size: 22px;
+    color: #00026D;
+}
+
+.contact-left-column .contact-info-item p {
+    margin: 0;
+}
+/* --- СТИЛИ ДЛЯ ПРАВОЙ КОЛОНКИ (ЗАГОЛОВОК ФОРМЫ И ФОРМА) --- */
+.contact-right-column .elementor-widget-heading .elementor-heading-title,
+.contact-right-column .form-section-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #222222;
+    margin-bottom: 25px;
+    line-height: 1.3;
+}
+
+/* --- ОБНОВЛЕННЫЕ СТИЛИ ДЛЯ ФОРМЫ CONTACT FORM 7 (под новый вид) --- */
+.cf7-custom-form-wrapper {
+    max-width: 100%;
+}
+
+.cf7-custom-form-wrapper .cf7-form-group {
+    margin-bottom: 20px;
+}
+
+.cf7-custom-form-wrapper p {
+    margin: 0;
+}
+
+.cf7-custom-form-wrapper label {
+    display: block;
+    font-size: 13px;
+    color: #6c757d;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.cf7-custom-form-wrapper .wpcf7-form-control.wpcf7-text,
+.cf7-custom-form-wrapper .wpcf7-form-control.wpcf7-tel {
+    width: 100%;
+    padding: 6px 0;
+    font-size: 15px;
+    color: #333333;
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    background-color: transparent;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-bottom-color 0.3s ease;
+    border-radius: 0;
+}
+
+.cf7-custom-form-wrapper .wpcf7-form-control::placeholder {
+  color: #adb5bd;
+  opacity: 1;
+}
+
+.cf7-custom-form-wrapper .wpcf7-form-control.wpcf7-text:focus,
+.cf7-custom-form-wrapper .wpcf7-form-control.wpcf7-tel:focus {
+    border-bottom-color: #00026D;
+}
+
+.cf7-custom-form-wrapper .custom-cf7-submit {
+    background-color: #00026D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.cf7-custom-form-wrapper .custom-cf7-submit:hover {
+    background-color: #00014F;
+}
+
+/* === НАЧАЛО СТИЛЕЙ ДЛЯ ФОРМЫ FIGMA === */
+.elementor-widget-shortcode .wpcf7 .figma-form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #e0e7ff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.figma-form-container .figma-form-title {
+    font-size: 26px;
+    font-weight: 600;
+    color: #333333;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.figma-form-container .wpcf7-form > p {
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+.figma-form-container .wpcf7-form > p:last-child {
+    margin-bottom: 0;
+}
+
+.figma-form-container .figma-style-input {
+    width: 100%;
+    padding: 12px 18px;
+    border: 1px solid #DDE2EC;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #FFFFFF;
+    color: #333333;
+}
+
+.figma-form-container .figma-style-input::placeholder {
+    color: #8A94A6;
+    opacity: 1;
+}
+
+.figma-form-container .figma-style-input:focus {
+    outline: none;
+    border-color: #00026D;
+    box-shadow: 0 0 0 2px rgba(0, 2, 109, 0.2);
+}
+
+.figma-form-container .figma-style-button {
+    width: 100%;
+    background-color: #00026D;
+    color: #ffffff;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: none;
+    transition: background-color 0.3s ease;
+}
+
+.figma-form-container .figma-style-button:hover {
+    background-color: #00014F;
+}
+
+.figma-form-container p.figma-privacy-text {
+    font-size: 13px;
+    color: #505050;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.figma-form-container p.figma-privacy-text a {
+    color: #00026D;
+    text-decoration: none;
+}
+
+.figma-form-container p.figma-privacy-text a:hover {
+    text-decoration: underline;
+}
+/* === КОНЕЦ СТИЛЕЙ ДЛЯ ФОРМЫ FIGMA === */
+
+/* --- НАЧАЛО КАСТОМНОГО CSS ДЛЯ ФИКСИРОВАННОЙ ШИРИНЫ НА ПК --- */
+
+@media (min-width: 992px) { /* Применять только для экранов 992px и шире (ПК). Можете изменить на 1025px или 1201px */
+
+    /* Главный контейнер Elementor для контента страницы.
+       Этот селектор нацелен на основной блок, где Elementor размещает все секции. */
+    .elementor-section-wrap, /* Для некоторых старых версий или структур */
+    div.elementor[data-elementor-type="wp-page"],
+    div.elementor[data-elementor-type="post"], /* Для постов, если они тоже редактируются Elementor */
+    div.elementor[data-elementor-type="wp-post"] { /* Альтернативный data-атрибут для постов */
+        width: 1027px !important;     /* ЗАДАЙТЕ ЗДЕСЬ ЖЕЛАЕМУЮ ФИКСИРОВАННУЮ ШИРИНУ */
+        max-width: 1027px !important; /* Убедитесь, что он не растягивается больше этого значения */
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float: none !important; /* На всякий случай, если есть плавающие блоки */
+        box-sizing: border-box !important; /* Для корректного расчета ширины с padding/border */
+    }
+
+    /* Если вы используете шаблон "Elementor Canvas" (Холст Elementor),
+       иногда бывает, что сам body нужно ограничить, но обычно селектор выше должен сработать
+       на внутренний контейнер Elementor. */
+    /*
+    body.elementor-template-canvas {
+        max-width: 1200px !important;  /* ЗАДАЙТЕ ЗДЕСЬ ЖЕЛАЕМУЮ ФИКСИРОВАННУЮ ШИРИНУ */
+        /* margin: 0 auto !important; /* Этот может сломать некоторые вещи, если есть позиционирование */
+    /* }
+    */
+
+    /* Чтобы предотвратить горизонтальную прокрутку, если какой-то элемент вылезает.
+       Это также может скрыть легитимные горизонтальные прокрутки, если они есть. */
+    body {
+        overflow-x: hidden !important;
+    }
+
+    /* Дополнительно, если какие-то внутренние секции Elementor все равно пытаются растянуться.
+       Обычно .elementor-section-wrap или div.elementor[...] выше должно быть достаточно. */
+    .elementor-section.elementor-section-boxed > .elementor-container,
+    .elementor-section.elementor-section-stretched > .elementor-container { /* Если у вас есть "растянутые" секции, но вы хотите их ограничить */
+        max-width: 1027px !important; /* ЗАДАЙТЕ ЗДЕСЬ ЖЕЛАЕМУЮ ФИКСИРОВАННУЮ ШИРИНУ (ту же, что и выше) */
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    /* Убедимся, что контейнеры внутри секций также центрируются, если они не во всю ширину секции */
+    .elementor-container {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+/* --- КОНЕЦ КАСТОМНОГО CSS ДЛЯ ФИКСИРОВАННОЙ ШИРИНЫ НА ПК --- */
